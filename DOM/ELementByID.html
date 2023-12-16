@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM METHODS IN JS</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="heading">Document object Model In JS</h1>
+        <h3 id="heading2">Methods of document object model</h3>
+        <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt perspiciatis, harum
+            dolores rem expedita obcaecati in, mollitia possimus, autem iusto corporis eius ipsum a sunt eveniet! Eius,
+            veniam vel!</p>
+        <script>
+            var head = document.getElementById('heading');
+            head.textContent = 'DOM IN JS';
+            head.innerText = 'Javascript';
+            console.log(head);
+            // Inner Html
+            var head2 = document.getElementById('heading2');
+            head2.innerHTML = '<h1>hello world</h1>';
+            console.log(head2);
+
+        </script>
+    </div>
+</body>
+
+</html>
