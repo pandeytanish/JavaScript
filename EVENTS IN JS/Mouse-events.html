@@ -11,6 +11,7 @@
     <h3>Javascript</h3>
     <button onclick="changeColor()">Click Me</button>
     <button ondblclick="changeSize()">CLick Me 2 Times</button>
+    <button onmouseover="changeBackground()">hover over the button</button>
 
     <script>
         function changeColor(){
@@ -19,6 +20,10 @@
         function changeSize(){
             document.body.style.fontSize = "100px"
         }
+        function changeBackground(){
+            document.body.style.backgroundColor = "red"
+        }
+
     </script>
 </body>
 </html>
