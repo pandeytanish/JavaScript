@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions In Javascript</title>
+</head>
+<body>
+    <script>
+        // Named Function
+function firstFunction(){
+    console.log("First Function Code")
+    document.write("Hello Javascript")
+}
+firstFunction();
+
+// Anonymous function
+let anonymous = function (secondFunction) { 
+	console.log("This is an anonymous ", secondFunction); 
+}; 
+
+anonymous("secondFunction"); 
+
+// Arrow Function
+thirdFunction = () => {
+  console.log("This is arrow function");
+}
+thirdFunction();
+
+// Immediate invoke Function
+(function()  
+ {  
+ console.log("This is Immediate Invoke Function");   
+})(); 
+
+ 
+
+
+    </script>
+</body>
+</html>
