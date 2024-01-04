@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composed Function</title>
+</head>
+<body>
+    <script>
+        function callbackFunction(a,b){
+            console.log("I am callback funnction",a+b)
+
+        }
+        function higherOrder(func){
+            func(10,20)
+            console.log('higher order function')
+        }
+        higherOrder(callbackFunction)
+    </script>
+</body>
+</html>
