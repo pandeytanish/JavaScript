@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function sum(a,b){
+        //     document.write(a+b);
+        // }
+        // let c = sum(3,2);
+        // document.write(c);
+
+        // By using return key
+        // function sum(a,b){
+        //     document.write(a+b);
+        //     return a+b ;
+        //     // document.write("hello") Code after return key will not be executed
+        // }
+        // let c = sum(3,2);
+        // document.write(c);
+
+        function printEven(a ,b ){
+             let c=0;
+            for (i = a; i <= b; i++) {
+              
+            if (i % 2 == 0) {
+                c+= i
+            }
+        }
+        return c
+        }
+        document.write( printEven(0,25));
+
+
+
+       printEven(20,25);
+    </script>
+</body>
+</html>
