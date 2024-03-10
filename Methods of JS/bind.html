@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Method</title>
+</head>
+<body>
+    <script>
+        let nameObj = { 
+	name: "Tony"
+} 
+
+let PrintName = { 
+	name: "steve", 
+	sayHi: function () { 
+
+		// Here "this" points to nameObj 
+		console.log(this.name); 
+	} 
+} 
+
+let HiFun = PrintName.sayHi.bind(nameObj); 
+HiFun();
+
+    </script>
+</body>
+</html>
