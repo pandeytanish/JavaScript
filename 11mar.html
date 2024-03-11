@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const person = {
+fullName: function(city) {
+    return this.firstName + " " + this.lastName  + " " + city;
+  }
+}
+const person1 = {
+   firstName:"pro",
+  lastName: "skill hub"
+}
+const person2 = {
+    firstName: "tanish",
+    lastName : "pandey"
+}
+document.write(person.fullName.call(person1, "rewa"));
+document.write(person.fullName.apply(person2, ["Rewa"]));
+ </script>
+
+</body>
+</html>
